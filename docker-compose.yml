@@ -13,3 +13,5 @@ services:
     volumes:
       - /var/www/html/jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./jenkins/java.security:/usr/lib/jvm/default-jvm/jre/lib/security/java.security
+      - ./jenkins/java.security:/usr/lib/jvm/java-1.8-openjdk/jre/lib/security/java.security
