@@ -1,0 +1,12 @@
+version: '3'
+
+#CHANGE TO SIMPLE DOCKER-RUN. IF THERE IS NO MORE CONFIG RUNNING.
+
+services:
+  jenkins:
+    build:
+      context: ./jenkins
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+      - '50001:50001'
